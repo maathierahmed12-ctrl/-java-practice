@@ -1,19 +1,19 @@
 import java.util.*;
 public class EmployeeHashMapDemo {
     public static void main(String[] args){
-        HashMap<String, Integer>  employeeIDs = new HashMap<>();
+        HashMap<Integer,String> employee = new HashMap<>();
 
-        employeeIDs.put("Ali" , 12);
-        employeeIDs.put("Muna",20);
-        employeeIDs.put("Omar",32);
-        employeeIDs.put("Reem",45);
-        employeeIDs.put("Noor",14);
+        employee.put(126,"Ali");
+        employee.put(20 ,"Muna");
+        employee.put(32,"Omar");
+        employee.put(45, "Reem");
+        employee.put(14,"Noor");
 
-        System.out.println("Update all employeeIDs : " + employeeIDs);
+        System.out.println("Update all employeeIDs : " + employee);
 
-        employeeIDs.put("Ahmed",14);
+        employee.put(14,"Ahmed");
 
-        System.out.println("Update  employeeIDs : " + employeeIDs);
+        System.out.println("Update  employeeIDs : " + employee);
 
 
 

@@ -1,21 +1,21 @@
 import java.util.*;
 public class EmployeeCheckDemo {
     public static void main(String[] args){
-        HashMap<String, Integer>   employee = new HashMap<>();
+        HashMap<Integer,String> employee = new HashMap<>();
 
-        employee.put("Ali" , 12);
-        employee.put("Muna",20);
-        employee.put("Omar",32);
-        employee.put("Reem",45);
-        employee.put("Noor",14);
+        employee.put(126,"Ali");
+        employee.put(20 ,"Muna");
+        employee.put(32,"Omar");
+        employee.put(45, "Reem");
+        employee.put(14,"Noor");
 
         System.out.println("Update all  employee  : " +  employee );
 
-          boolean exists = employee.containsKey("Omar,32");
+          boolean exists = employee.containsKey("32,Omar");
 
             System.out.println("It is set employee  : " +  exists  );
 
-           boolean notexists = employee.containsKey("Omar,32");
+           boolean notexists = employee.containsKey("32,Omar");
 
          System.out.println("It is set employee  : " +  notexists  );
 
