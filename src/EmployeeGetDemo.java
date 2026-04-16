@@ -20,6 +20,12 @@ public class EmployeeGetDemo {
 
         System.out.println("returned value clearly   employee  : " +  "employee (118)" );
 
+        for (Map.Entry<Integer, String> x : employee.entrySet()) {
+
+            System.out.println(x.getKey() + "ID -> 101 ,Ali "  + x.getValue());
+
+            System.out.println("after all updates employee :" + employee);
+        }
 
 
 
