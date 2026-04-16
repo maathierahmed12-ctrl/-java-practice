@@ -2,29 +2,29 @@ import java.util.HashMap;
 public class CountryCapitalDemo {
 
     public static void main(String[] args) {
-        HashMap<Integer, String> countrycapital  = new HashMap<>();
+        HashMap<String, String> countrycapital  = new HashMap<>();
 
-        countrycapital .put(126, "Oman");
-        countrycapital .put(20, "Egypt");
-        countrycapital .put(32, "France");
-        countrycapital .put(45, "Tokyo");
-        countrycapital .put(14, "Japan");
+        countrycapital .put("Oman" , "Muscat");
+        countrycapital .put("Egypt","Cairo");
+        countrycapital .put("France","Paris");
+        countrycapital .put( "Japan","Tokyo");
+        countrycapital .put("Brazil","Rio de Janeiro");
 
         System.out.println(" all country  : " + countrycapital );
 
         System.out.println(" capital of one country :" + countrycapital.get(20));
 
-        boolean exists = countrycapital.containsKey("32,France");
+        boolean exists = countrycapital.containsKey("France,Paris");
 
         System.out.println("It is set country  : " +  exists  );
 
         System.out.println("result clearly country :" + countrycapital);
 
-        countrycapital.put(666,"Oman");
+        countrycapital.put("Oman" , "Muscat");
 
         System.out.println("Update country :" + countrycapital);
 
-        countrycapital.remove(126,"Toothpaste");
+        countrycapital.remove("Japan","Tokyo");
 
         System.out.println("after remove country :" + countrycapital);
 

@@ -2,28 +2,28 @@ import java.util.HashMap;
 public class ProductPriceDemo {
 
     public static void main(String[] args) {
-        HashMap<Integer, String> product  = new HashMap<>();
+        HashMap< Double , String> product  = new HashMap<>();
 
-        product .put(126, "Toothpaste");
-        product .put(20, "Pen");
-        product .put(32, "Smartwatch");
-        product .put(45, "Headphones");
-        product .put(14, "Primer");
+        product .put(12.6, "Toothpaste");
+        product .put(2.0, "Pen");
+        product .put(3.2, "Smartwatch");
+        product .put(4.5, "Headphones");
+        product .put(1.4, "Primer");
 
         System.out.println(" all product  : " + product );
 
 
-        boolean exists = product.containsKey("32,Smartwatch");
+        boolean exists = product.containsKey("3.2,Smartwatch");
 
         System.out.println("It is set product  : " +  exists  );
 
         System.out.println("result clearly product :" + product);
 
-        System.out.println("  price of one product :" + product.get(20));
+        System.out.println("  price of one product :" + product.get(2.0));
 
         System.out.println("Update product :" + product);
 
-        product.remove(126,"Toothpaste");
+        product.remove(12.6,"Toothpaste");
 
         System.out.println("after remove product :" + product);
 
